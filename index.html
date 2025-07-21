@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập mảng</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <div class="inputContent">
+          <input
+            type="number"
+            placeholder="Nhập số n"
+            id="number"
+            class="input-form"
+          />
+          <button type="button" class="btn btn-primary" onclick="themSo()">
+            Thêm số
+          </button>
+        </div>
+        <div class="outputContent">
+          <span>👉</span>
+          <span id="inforListNumber"></span>
+        </div>
+      </div>
+      <div class="content accordion" id="accordionExample">
+        <!-- Bài tập 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <span class="tittle">1. Tổng số dương</span>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT1()">
+                Tính tổng
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <span class="tittle">2. Đếm số dương</span>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT2()">
+                Đếm số
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <span class="tittle">3. Tìm số nhỏ nhất</span>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT3()">
+                Tìm số nhỏ nhất
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <span class="tittle">4. Tìm số dương nhỏ nhất</span>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT4()">
+                Tìm số dương nhỏ nhất
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT4"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <span class="tittle">5. Tìm số chẵn cuối cùng</span>
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT5()">
+                Tìm số chẵn
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              <span class="tittle">6. Đổi chỗ</span>
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <div style="margin-bottom: 1rem">
+                <input
+                  class="input-form"
+                  type="number"
+                  placeholder="Nhập vị trí 1"
+                  id="posFirstBT6"
+                />
+                <input
+                  class="input-form"
+                  type="number"
+                  placeholder="Nhập vị trí 2"
+                  id="posSecondBT6"
+                />
+              </div>
+              <button type="button" class="btn btn-primary" onclick="btnBT6()">
+                Đổi chỗ
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT6"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              <span class="tittle">7. Sắp xếp tăng dần</span>
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT7()">
+                Sắp xếp
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT7"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              <span class="tittle">8. Tìm số nguyên tố đầu tiên</span>
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT8()">
+                Tìm số nguyên tố
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT8"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              <span class="tittle">9. Đếm số nguyên</span>
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <input
+                id="numberBT9"
+                type="number"
+                placeholder="Nhập số"
+                class="input-form"
+              />
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="themSoBT9()"
+              >
+                Thêm số
+              </button>
+              <div class="outputContent" style="margin-bottom: 1rem">
+                <span>👉</span>
+                <span id="inforNumberBT9"></span>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="btnBT9()">
+                Đếm số nguyên
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT9"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài tập 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              <span class="tittle">10. So sánh số lượng số âm và dương</span>
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="content">
+              <button type="button" class="btn btn-primary" onclick="btnBT10()">
+                So sánh
+              </button>
+              <div id="" class="infor-submit"></div>
+              <div class="outputContent">
+                <span>👉</span>
+                <span id="inforBT10"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

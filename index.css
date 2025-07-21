@@ -1,0 +1,36 @@
+section{
+    padding: 5rem 10rem;
+}
+.content{
+    padding: 1rem;
+}
+.tittle{
+    font-weight: 500;
+}
+.inputContent{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.input-form{
+    width: 15rem;
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    margin-right: 1rem;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.input-form:focus{
+  border: 1.5px solid #0d6efd;
+  outline: none;
+}
+.outputContent{
+    margin-top: 1rem;
+    background-color:;
+    padding: 0.5rem;
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+}
